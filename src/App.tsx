@@ -1,14 +1,15 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, Suspense } from "react";
 import { useRecoilState } from "recoil";
 import styled, { ThemeProvider } from "styled-components";
 import { darkModeState } from "./theme.tsx";
 import color from "./color";
-import Hello from "./chapter/Hello.tsx";
-import About from "./chapter/About.tsx";
-import Skill from "./chapter/Skill.tsx";
-import Portfolio from "./chapter/Portfolio.tsx";
-import Contact from "./chapter/Contact.tsx";
 import Header from "./components/Header.tsx";
+
+const Hello = React.lazy(() => import("./chapter/Hello.tsx"));
+const About = React.lazy(() => import("./chapter/About.tsx"));
+const Skill = React.lazy(() => import("./chapter/Skill.tsx"));
+const Portfolio = React.lazy(() => import("./chapter/Portfolio.tsx"));
+const Contact = React.lazy(() => import("./chapter/Contact.tsx"));
 
 type ChapterName = "Hello" | "About" | "Skill" | "Portfolio" | "Contact";
 
@@ -85,46 +86,48 @@ const App: React.FC = () => {
         <Header onToggleDarkMode={toggleDarkMode} onClick={scrollToChapter}>
           {chapter}
         </Header>
-        <ChapterContainer
-          ref={chapterRefs.Hello}
-          id="Hello"
-          tabIndex={0}
-          data-section="Hello"
-        >
-          <Hello />
-        </ChapterContainer>
-        <ChapterContainer
-          ref={chapterRefs.About}
-          id="About"
-          tabIndex={0}
-          data-section="About"
-        >
-          <About />
-        </ChapterContainer>
-        <ChapterContainer
-          ref={chapterRefs.Skill}
-          id="Skill"
-          tabIndex={0}
-          data-section="Skill"
-        >
-          <Skill />
-        </ChapterContainer>
-        <ChapterContainer
-          ref={chapterRefs.Portfolio}
-          id="Portfolio"
-          tabIndex={0}
-          data-section="Portfolio"
-        >
-          <Portfolio />
-        </ChapterContainer>
-        <ChapterContainer
-          ref={chapterRefs.Contact}
-          id="Contact"
-          tabIndex={0}
-          data-section="Contact"
-        >
-          <Contact />
-        </ChapterContainer>
+        <Suspense fallback={<div>Loading...</div>}>
+          <ChapterContainer
+            ref={chapterRefs.Hello}
+            id="Hello"
+            tabIndex={0}
+            data-section="Hello"
+          >
+            <Hello />
+          </ChapterContainer>
+          <ChapterContainer
+            ref={chapterRefs.About}
+            id="About"
+            tabIndex={0}
+            data-section="About"
+          >
+            <About />
+          </ChapterContainer>
+          <ChapterContainer
+            ref={chapterRefs.Skill}
+            id="Skill"
+            tabIndex={0}
+            data-section="Skill"
+          >
+            <Skill />
+          </ChapterContainer>
+          <ChapterContainer
+            ref={chapterRefs.Portfolio}
+            id="Portfolio"
+            tabIndex={0}
+            data-section="Portfolio"
+          >
+            <Portfolio />
+          </ChapterContainer>
+          <ChapterContainer
+            ref={chapterRefs.Contact}
+            id="Contact"
+            tabIndex={0}
+            data-section="Contact"
+          >
+            <Contact />
+          </ChapterContainer>
+        </Suspense>
       </PageContainer>
     </ThemeProvider>
   );
