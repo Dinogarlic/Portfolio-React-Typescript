@@ -8,6 +8,7 @@
   <meta name="theme-color" content="#7CAEFF" />
   <meta name="description"
     content="Welcome to Donghee Kim's Portfolio. Explore my projects, contributions, and skills in web development, React, and more." />
+  <meta property="og:image" content="./img/selfie.gif">
 
   <!-- SEO 관련 Meta 태그 -->
   <meta name="author" content="Donghee Kim" />
@@ -17,15 +18,12 @@
 </head>
 
 <body>
-  <!-- 로드 화면 -->
   <div id="loading-screen" style="display: none;">
     <p>Loading Portfolio...</p>
   </div>
 
-  <!-- 메인 앱 컨테이너 -->
   <div id="root"></div>
 
-  <!-- Footer 스크립트 -->
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       const loadingScreen = document.getElementById("loading-screen");
