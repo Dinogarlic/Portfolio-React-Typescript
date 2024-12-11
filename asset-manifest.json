@@ -1,13 +1,23 @@
 {
   "files": {
     "main.css": "/Portfolio-React-Typescript/static/css/main.4a198905.css",
-    "main.js": "/Portfolio-React-Typescript/static/js/main.238170cf.js",
+    "main.js": "/Portfolio-React-Typescript/static/js/main.61c6c1b9.js",
+    "static/js/660.b7a84139.chunk.js": "/Portfolio-React-Typescript/static/js/660.b7a84139.chunk.js",
+    "static/js/935.697f5065.chunk.js": "/Portfolio-React-Typescript/static/js/935.697f5065.chunk.js",
+    "static/js/719.64d38918.chunk.js": "/Portfolio-React-Typescript/static/js/719.64d38918.chunk.js",
+    "static/js/580.1945b8e1.chunk.js": "/Portfolio-React-Typescript/static/js/580.1945b8e1.chunk.js",
+    "static/js/77.cbe191d0.chunk.js": "/Portfolio-React-Typescript/static/js/77.cbe191d0.chunk.js",
     "index.html": "/Portfolio-React-Typescript/index.html",
     "main.4a198905.css.map": "/Portfolio-React-Typescript/static/css/main.4a198905.css.map",
-    "main.238170cf.js.map": "/Portfolio-React-Typescript/static/js/main.238170cf.js.map"
+    "main.61c6c1b9.js.map": "/Portfolio-React-Typescript/static/js/main.61c6c1b9.js.map",
+    "660.b7a84139.chunk.js.map": "/Portfolio-React-Typescript/static/js/660.b7a84139.chunk.js.map",
+    "935.697f5065.chunk.js.map": "/Portfolio-React-Typescript/static/js/935.697f5065.chunk.js.map",
+    "719.64d38918.chunk.js.map": "/Portfolio-React-Typescript/static/js/719.64d38918.chunk.js.map",
+    "580.1945b8e1.chunk.js.map": "/Portfolio-React-Typescript/static/js/580.1945b8e1.chunk.js.map",
+    "77.cbe191d0.chunk.js.map": "/Portfolio-React-Typescript/static/js/77.cbe191d0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4a198905.css",
-    "static/js/main.238170cf.js"
+    "static/js/main.61c6c1b9.js"
   ]
 }
