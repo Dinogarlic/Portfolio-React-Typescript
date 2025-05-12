@@ -21,9 +21,10 @@ const projects: ProjectType[] = [
     title: "HUMAIND: 인공지능 윤리 평가 시스템",
     duration: "2024. 09 ~ 2024. 11 (4人)",
     introduction: "내가 사용하는 인공지능이 과연 윤리적일까?",
-    explanation: `인공지능의 발전과 함께 인공지능이 윤리적인지에 대해서 많은 의구심이 들고 있습니다.`,
-    role: "Web Design & FE",
-    tech: ["React"],
+    explanation: `인공지능의 발전과 함께 인공지능이 윤리적인지에 대해서 많은 의구심이 들고 있습니다.
+    휴마인드에서는 내가 개발한 인공지능과 그리고 인공지능을 개발하는 나 자신의 윤리성에 대한 자가진단 테스트를 진행할 수 있습니다.`,
+    role: "Web Design & FE & deploy to AWS",
+    tech: ["React", "JavaScript"],
     contribution: "45%",
     github: "https://github.com/patisiel-study/ELSA-frontend",
     images: [
@@ -39,10 +40,11 @@ const projects: ProjectType[] = [
     introduction: "특별한 생일 편지를 보내줄 수는 없을까?",
     explanation: `생일을 조금 더 뜻깊게 보내고 싶다는 마음에서 시작한 프로젝트입니다.
     생일이 한달 남은 친구가 케이크 모양의 편지함을 만들면,
-    친구가 케이크에 귀여운 촛불 모양의 편지를 작성할 수 있습니다.`,
+    친구가 케이크에 귀여운 촛불 모양의 편지를 작성할 수 있습니다.
+    내 트리를 꾸며줘에서 착안한 프로젝트입니다.`,
     role: "Web Design & FE",
-    tech: ["React"],
-    contribution: "25%",
+    tech: ["React", "JavaScript"],
+    contribution: "40%",
     github: "https://github.com/patisiel-study/decorate-my-cake-frontend",
     images: [
       "DecorateMyCake_main.png",
@@ -145,7 +147,9 @@ const Portfolio: React.FC = () => {
                     <br /># 프로젝트 내 역할 : {project.role}
                     <br /># 프로젝트 사용 기술 :{" "}
                     {project.tech.map((tech, index) => (
-                      <Tag key={index}>{tech}</Tag>
+                      <Tag key={index} tech={tech}>
+                        {tech}
+                      </Tag>
                     ))}
                     <br /># 프로젝트 기여도 : {project.contribution}
                   </ProjectExplanation>
@@ -273,10 +277,10 @@ const ProjectExplanation = styled.p`
   margin: 0;
 `;
 
-const Tag = styled.span`
+const Tag = styled.span<{ tech: string }>`
   margin-right: 0.5rem;
   padding: 0.1rem 0.5rem;
-  background-color: #61dafb;
+  background-color: ${({ tech }) => color.tech[tech.toLowerCase()] || "#ccc"};
   border-radius: 0.5rem;
   font-size: 0.9rem;
 `;

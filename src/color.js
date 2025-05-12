@@ -11,6 +11,10 @@ const color = {
     shadow: "#555555",
     text: "white",
   },
+  tech: {
+    react: "#61dafb",
+    javascript: "#f7df1e",
+  },
 };
 
 export default color;
