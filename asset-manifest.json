@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "https://dinogarlic.github.io/Portfolio-React-Typescript/static/css/main.4a198905.css",
-    "main.js": "https://dinogarlic.github.io/Portfolio-React-Typescript/static/js/main.5ba5a65c.js",
+    "main.js": "https://dinogarlic.github.io/Portfolio-React-Typescript/static/js/main.6f5f593c.js",
     "static/js/660.b7a84139.chunk.js": "https://dinogarlic.github.io/Portfolio-React-Typescript/static/js/660.b7a84139.chunk.js",
     "static/js/935.12f2f102.chunk.js": "https://dinogarlic.github.io/Portfolio-React-Typescript/static/js/935.12f2f102.chunk.js",
     "static/js/719.9d3cab0e.chunk.js": "https://dinogarlic.github.io/Portfolio-React-Typescript/static/js/719.9d3cab0e.chunk.js",
-    "static/js/580.01558d80.chunk.js": "https://dinogarlic.github.io/Portfolio-React-Typescript/static/js/580.01558d80.chunk.js",
+    "static/js/580.e765847f.chunk.js": "https://dinogarlic.github.io/Portfolio-React-Typescript/static/js/580.e765847f.chunk.js",
     "static/js/77.cbe191d0.chunk.js": "https://dinogarlic.github.io/Portfolio-React-Typescript/static/js/77.cbe191d0.chunk.js",
     "index.html": "https://dinogarlic.github.io/Portfolio-React-Typescript/index.html",
     "main.4a198905.css.map": "https://dinogarlic.github.io/Portfolio-React-Typescript/static/css/main.4a198905.css.map",
-    "main.5ba5a65c.js.map": "https://dinogarlic.github.io/Portfolio-React-Typescript/static/js/main.5ba5a65c.js.map",
+    "main.6f5f593c.js.map": "https://dinogarlic.github.io/Portfolio-React-Typescript/static/js/main.6f5f593c.js.map",
     "660.b7a84139.chunk.js.map": "https://dinogarlic.github.io/Portfolio-React-Typescript/static/js/660.b7a84139.chunk.js.map",
     "935.12f2f102.chunk.js.map": "https://dinogarlic.github.io/Portfolio-React-Typescript/static/js/935.12f2f102.chunk.js.map",
     "719.9d3cab0e.chunk.js.map": "https://dinogarlic.github.io/Portfolio-React-Typescript/static/js/719.9d3cab0e.chunk.js.map",
-    "580.01558d80.chunk.js.map": "https://dinogarlic.github.io/Portfolio-React-Typescript/static/js/580.01558d80.chunk.js.map",
+    "580.e765847f.chunk.js.map": "https://dinogarlic.github.io/Portfolio-React-Typescript/static/js/580.e765847f.chunk.js.map",
     "77.cbe191d0.chunk.js.map": "https://dinogarlic.github.io/Portfolio-React-Typescript/static/js/77.cbe191d0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4a198905.css",
-    "static/js/main.5ba5a65c.js"
+    "static/js/main.6f5f593c.js"
   ]
 }
