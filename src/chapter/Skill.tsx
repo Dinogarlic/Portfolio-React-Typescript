@@ -11,19 +11,31 @@ const Skill: React.FC = () => {
           <SkillContent>
             <SkillNameAndLogo>
               <SkillName>HTML</SkillName>
-              <SkillLogo src="../img/logo_html.png" alt="HTML 로고" />
+              <SkillLogo
+                src={`${process.env.PUBLIC_URL}/img/logo_html.png`}
+                alt="HTML 로고"
+              />
             </SkillNameAndLogo>
             <SkillNameAndLogo>
               <SkillName>CSS</SkillName>
-              <SkillLogo src="../img/logo_css.png" alt="CSS 로고" />
+              <SkillLogo
+                src={`${process.env.PUBLIC_URL}/img/logo_css.png`}
+                alt="CSS 로고"
+              />
             </SkillNameAndLogo>
             <SkillNameAndLogo>
               <SkillName>JavaScript</SkillName>
-              <SkillLogo src="../img/logo_js.png" alt="JavaScript 로고" />
+              <SkillLogo
+                src={`${process.env.PUBLIC_URL}/img/logo_js.png`}
+                alt="JavaScript 로고"
+              />
             </SkillNameAndLogo>
             <SkillNameAndLogo>
               <SkillName>TypeScript</SkillName>
-              <SkillLogo src="../img/logo_ts.png" alt="TypeScript 로고" />
+              <SkillLogo
+                src={`${process.env.PUBLIC_URL}/img/logo_ts.png`}
+                alt="TypeScript 로고"
+              />
             </SkillNameAndLogo>
           </SkillContent>
         </SkillBox>
@@ -32,7 +44,10 @@ const Skill: React.FC = () => {
           <SkillContent>
             <SkillNameAndLogo>
               <SkillName>React</SkillName>
-              <SkillLogo src="../img/logo_react.png" alt="React 로고" />
+              <SkillLogo
+                src={`${process.env.PUBLIC_URL}/img/logo_react.png`}
+                alt="React 로고"
+              />
             </SkillNameAndLogo>
           </SkillContent>
         </SkillBox>
@@ -41,7 +56,10 @@ const Skill: React.FC = () => {
           <SkillContent>
             <SkillNameAndLogo>
               <SkillName>React Native</SkillName>
-              <SkillLogo src="../img/logo_react.png" alt="React Native 로고" />
+              <SkillLogo
+                src={`${process.env.PUBLIC_URL}/img/logo_react.png`}
+                alt="React Native 로고"
+              />
             </SkillNameAndLogo>
           </SkillContent>
         </SkillBox>
@@ -50,11 +68,17 @@ const Skill: React.FC = () => {
           <SkillContent>
             <SkillNameAndLogo>
               <SkillName>Git</SkillName>
-              <SkillLogo src="../img/logo_git.png" alt="Git 로고" />
+              <SkillLogo
+                src={`${process.env.PUBLIC_URL}/img/logo_git.png`}
+                alt="Git 로고"
+              />
             </SkillNameAndLogo>
             <SkillNameAndLogo>
               <SkillName>Github</SkillName>
-              <SkillLogo src="../img/logo_github.png" alt="Github 로고" />
+              <SkillLogo
+                src={`${process.env.PUBLIC_URL}/img/logo_github.png`}
+                alt="Github 로고"
+              />
             </SkillNameAndLogo>
           </SkillContent>
         </SkillBox>
@@ -63,15 +87,24 @@ const Skill: React.FC = () => {
           <SkillContent>
             <SkillNameAndLogo>
               <SkillName>Figma</SkillName>
-              <SkillLogo src="../img/logo_figma.png" alt="Figma 로고" />
+              <SkillLogo
+                src={`${process.env.PUBLIC_URL}/img/logo_figma.png`}
+                alt="Figma 로고"
+              />
             </SkillNameAndLogo>
             <SkillNameAndLogo>
               <SkillName>Slack</SkillName>
-              <SkillLogo src="../img/logo_slack.png" alt="Slack 로고" />
+              <SkillLogo
+                src={`${process.env.PUBLIC_URL}/img/logo_slack.png`}
+                alt="Slack 로고"
+              />
             </SkillNameAndLogo>
             <SkillNameAndLogo>
               <SkillName>Notion</SkillName>
-              <SkillLogo src="../img/logo_notion.png" alt="Notion 로고" />
+              <SkillLogo
+                src={`${process.env.PUBLIC_URL}/img/logo_notion.png`}
+                alt="Notion 로고"
+              />
             </SkillNameAndLogo>
           </SkillContent>
         </SkillBox>

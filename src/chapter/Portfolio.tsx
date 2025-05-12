@@ -155,16 +155,18 @@ const Portfolio: React.FC = () => {
                 </ProjectContent>
                 <ProjectImgContainer>
                   <Icon
-                    src="../img/next.png"
+                    src={`${process.env.PUBLIC_URL}/img/next.png`}
                     alt="이전"
                     onClick={() => handleImageChange(projectIndex, "prev")}
                   />
                   <ProjectImg
-                    src={`../img/${project.images[imageIndexes[projectIndex]]}`}
+                    src={`${process.env.PUBLIC_URL}/img/${
+                      project.images[imageIndexes[projectIndex]]
+                    }`}
                     alt="프로젝트 이미지"
                   />
                   <Icon
-                    src="../img/next.png"
+                    src={`${process.env.PUBLIC_URL}/img/next.png`}
                     alt="다음"
                     onClick={() => handleImageChange(projectIndex, "next")}
                   />

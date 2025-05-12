@@ -8,34 +8,58 @@ const About: React.FC = () => {
       <Card>
         <CardTitle>Frontend Developer, Donghee!</CardTitle>
         <CardContent>
-          <Selfie src="../img/selfie.gif" alt="미모티콘" />
+          <Selfie
+            src={`${process.env.PUBLIC_URL}/img/selfie.gif`}
+            alt="미모티콘"
+          />
           <Information>
             <InformationBox>
-              <Icon src="../img/icon_name.png" alt="이름" />
+              <Icon
+                src={`${process.env.PUBLIC_URL}/img/icon_name.png`}
+                alt="이름"
+              />
               <Text>김동희 Donghee, Kim</Text>
             </InformationBox>
             <InformationBox>
-              <Icon src="../img/icon_birthday.png" alt="생일" />
+              <Icon
+                src={`${process.env.PUBLIC_URL}/img/icon_birthday.png`}
+                alt="생일"
+              />
               <Text>2001. 10. 03</Text>
             </InformationBox>
             <InformationBox>
-              <Icon src="../img/icon_home.png" alt="거주지" />
+              <Icon
+                src={`${process.env.PUBLIC_URL}/img/icon_home.png`}
+                alt="거주지"
+              />
               <Text>부산광역시</Text>
             </InformationBox>
             <InformationBox>
-              <Icon src="../img/icon_college.png" alt="학력" />
+              <Icon
+                src={`${process.env.PUBLIC_URL}/img/icon_college.png`}
+                alt="학력"
+              />
               <Text>동아대학교 컴퓨터공학과</Text>
             </InformationBox>
             <InformationBox>
-              <Icon src="../img/icon_email.png" alt="이메일" />
+              <Icon
+                src={`${process.env.PUBLIC_URL}/img/icon_email.png`}
+                alt="이메일"
+              />
               <Text>xldpsl1003@gmail.com</Text>
             </InformationBox>
             <LinkBox>
               <Link href="https://github.com/Dinogarlic">
-                <Icon src="../img/icon_github.png" alt="깃허브" />
+                <Icon
+                  src={`${process.env.PUBLIC_URL}/img/icon_github.png`}
+                  alt="깃허브"
+                />
               </Link>
               <Link href="#">
-                <Icon src="../img/icon_tistory.png" alt="티스토리" />
+                <Icon
+                  src={`${process.env.PUBLIC_URL}/img/icon_tistory.png`}
+                  alt="티스토리"
+                />
               </Link>
             </LinkBox>
           </Information>
